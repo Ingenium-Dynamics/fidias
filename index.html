@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia de Baile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      height: 100vh;
+      background: url('img/dance-bg.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .btn-cta {
+      background-color: #ff4081;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 50px;
+    }
+    .clase-card img {
+      border-radius: 10px;
+    }
+    .testimonial {
+      background-color: #f8f9fa;
+      padding: 50px 0;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+    }
+    footer a {
+      color: #ff4081;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Academia de Baile</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#clases">Clases</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 class="display-4">Descubre tu pasión por el baile</h1>
+    <p class="lead">Inscríbete en nuestras clases y da el primer paso hacia el ritmo.</p>
+    <a href="#clases" class="btn btn-cta">Ver Clases</a>
+  </section>
+
+  <!-- Clases Section -->
+  <section id="clases" class="container py-5">
+    <h2 class="text-center mb-4">Nuestras Clases</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card clase-card">
+          <img src="img/salsa.jpg" class="card-img-top" alt="Salsa">
+          <div class="card-body">
+            <h5 class="card-title">Salsa</h5>
+            <p class="card-text">Aprende los pasos más vibrantes del ritmo latino.</p>
+            <a href="#" class="btn btn-primary">Más info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card clase-card">
+          <img src="img/tango.jpg" class="card-img-top" alt="Tango">
+          <div class="card-body">
+            <h5 class="card-title">Tango</h5>
+            <p class="card-text">Déjate llevar por la pasión y elegancia del tango.</p>
+            <a href="#" class="btn btn-primary">Más info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card clase-card">
+          <img src="img/hiphop.jpg" class="card-img-top" alt="Hip Hop">
+          <div class="card-body">
+            <h5 class="card-title">Hip Hop</h5>
+            <p class="card-text">Exprésate con movimientos urbanos y dinámicos.</p>
+            <a href="#" class="btn btn-primary">Más info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios Section -->
+  <section id="testimonios" class="testimonial text-center">
+    <div class="container">
+      <h2 class="mb-5">Lo que dicen nuestros estudiantes</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p>"Gracias a la academia, he mejorado mis habilidades y he hecho grandes amigos."</p>
+            <footer class="blockquote-footer">Ana López</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p>"El ambiente es increíble y los profesores son muy profesionales."</p>
+            <footer class="blockquote-footer">Carlos García</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p>"Una experiencia inolvidable, recomiendo totalmente sus clases."</p>
+            <footer class="blockquote-footer">Laura Martínez</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería Section -->
+  <section id="galeria" class="container py-5">
+    <h2 class="text-center mb-4">Galería de Fotos</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="img/galeria1.jpg" class="img-fluid mb-4" alt="Galería 1">
+      </div>
+      <div class="col-md-4">
+        <img src="img/galeria2.jpg" class="img-fluid mb-4" alt="Galería 2">
+      </div>
+      <div class="col-md-4">
+        <img src="img/galeria3.jpg" class="img-fluid mb-4" alt="Galería 3">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto Section -->
+  <section id="contacto" class="container py-5">
+    <h2 class="text-center mb-4">Contáctanos</h2>
+    <form>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Nombre" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Email" required>
+        </div>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2024 Academia de Baile. Todos los derechos reservados.</p>
+      <p>Síguenos en <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
