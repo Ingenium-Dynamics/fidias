@@ -1,45 +1,42 @@
-
-#logo{
-    width:auto ;
-    height: 60px;
+#logo {
+  width: auto;
+  height: 60px;
 }
 
 .navbar-brand {
-    color: white; /* color del texto */
+  color: white; /* color del texto */
 }
 .navbar {
-    background: white /* Degradado de blanco al color actual */
+  background: white; /* Degradado de blanco al color actual */
 }
 
+/* Configuración para que todas las imágenes tengan el mismo alto */
+.gallery-img img {
+  height: 250px; /* Ajusta la altura según lo que necesites */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  border-radius: 8px; /* Bordes redondeados */
+}
 
-    /* Configuración para que todas las imágenes tengan el mismo alto */
-    .gallery-img img {
-        height: 250px; /* Ajusta la altura según lo que necesites */
-        object-fit: cover; /* Mantiene la proporción de la imagen */
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
-        border-radius: 8px; /* Bordes redondeados */
-    }
+/* Efecto de zoom al pasar el cursor sobre la imagen */
+.gallery-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra más fuerte al hacer zoom */
+}
 
-    /* Efecto de zoom al pasar el cursor sobre la imagen */
-    .gallery-img img:hover {
-        transform: scale(1.05);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra más fuerte al hacer zoom */
-    }
+/* Estilo para el contenedor del carrusel */
+#carouselGaleria .carousel-inner {
+  padding: 10px;
+}
 
-    /* Estilo para el contenedor del carrusel */
-    #carouselGaleria .carousel-inner {
-        padding: 10px;
-    }
-
-    /* Control de ancho de las flechas para que sean más visibles */
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 10px;
-        border-radius: 50%;
-    }
-
+/* Control de ancho de las flechas para que sean más visibles */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+}
 
 /*
 .carousel-inner img {
@@ -49,42 +46,42 @@
 }*7
 
     /* Estilo para el efecto parallax */
-    .parallax {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    }
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
 
-    .parallax-1 {
-        background-image: url('/assets/img/fidias1.jpg'); /* Reemplaza con la ruta de la imagen */
-    }
+.parallax-1 {
+  background-image: url("/assets/img/fidias1.jpg"); /* Reemplaza con la ruta de la imagen */
+}
 
-    .parallax-2 {
-        background-image: url('/assets/img/fidias2.jpg'); /* Reemplaza con la ruta de la imagen */
-    }
+.parallax-2 {
+  background-image: url("/assets/img/fidias2.jpg"); /* Reemplaza con la ruta de la imagen */
+}
 
-    .parallax-3 {
-        background-image: url('/assets/img/fidias3.jpg'); /* Reemplaza con la ruta de la imagen */
-    }
+.parallax-3 {
+  background-image: url("/assets/img/fidias3.jpg"); /* Reemplaza con la ruta de la imagen */
+}
 
-    /* Efectos de animación */
-    .fade-in-element {
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
+/* Efectos de animación */
+.fade-in-element {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
 
-    .visible {
-        opacity: 1;
-    }
+.visible {
+  opacity: 1;
+}
 
-    /* Efecto de zoom en las imágenes de la galería * /
+/* Efecto de zoom en las imágenes de la galería * /
     .gallery-img {
         overflow: hidden;
         transition: transform 0.3s ease;
@@ -96,29 +93,54 @@
 
 
      /* Efecto de zoom para la imagen */
-     .card-img-top {
-        transition: transform 0.3s ease;
-    }
+.card-img-top {
+  transition: transform 0.3s ease;
+}
 
-    .card:hover .card-img-top {
-        transform: scale(1.1);
-    }
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
 
-    /* Animación de entrada */
-    .card-body {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 0.6s ease;
-    }
+/* Animación de entrada */
+.card-body {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
 
-    .card.show-card .card-body {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.card.show-card .card-body {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-    /* Efecto de hover en el botón */
-    .btn-primary:hover {
-        background-color: #ff6347; /* Cambia al color que prefieras */
-        border-color: #ff6347;
-        transition: all 0.3s ease;
-    }
+/* Efecto de hover en el botón */
+.btn-primary:hover {
+  background-color: #ff6347; /* Cambia al color que prefieras */
+  border-color: #ff6347;
+  transition: all 0.3s ease;
+}
+
+/*NUESTRAS CLASES*/
+.salsa-card {
+  max-width: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#clases .row {
+  justify-content: center;
+  align-items: stretch;
+}
+
+.card-body p,
+ul {
+  font-size: small;
+}
+
+.card-body button {
+  margin-top: auto;
+}
+
+.card {
+  height: 100%;
+}
