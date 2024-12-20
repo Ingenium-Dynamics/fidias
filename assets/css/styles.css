@@ -39,6 +39,25 @@
   border-radius: 50%;
 }
 
+#galeria hr {
+  justify-self: center;
+  width: 20%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.hr-unete {
+  height: 3px;
+  color: #b43a18;
+  background-color: #b43a18;
+  opacity: 90%;
+}
+
+#galeria p {
+  font-size: large;
+  font-weight: lighter;
+}
+
 /*
 .carousel-inner img {
     height: 200px; /* Ajusta el alto según tus necesidades * /
@@ -209,4 +228,38 @@ ul {
 
 .card {
   min-height: 100%;
+}
+
+/*CONTACTO*/
+#contacto form {
+  width: 50%;
+  justify-self: center;
+}
+
+#contacto hr {
+  justify-self: center;
+  width: 7%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.hr-contacto {
+  height: 3px;
+  color: #b43a18;
+  background-color: #b43a18;
+  opacity: 90%;
+}
+
+/*NAVBAR*/
+#navbarNav a {
+  font-size: 15px;
+}
+
+/*FOOTER*/
+#footer p {
+  text-align: center;
+}
+
+#footer img {
+  height: 30px;
 }
