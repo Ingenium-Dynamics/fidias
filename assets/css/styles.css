@@ -60,8 +60,24 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-.parallax-1 {
-  background-image: url("../img/fidias1.jpg"); /* Reemplaza con la ruta de la imagen */
+@media (min-width: 1201px) {
+  .parallax-1 {
+    background-image: url("../img/fidias1-removebg-preview-transformed.png"); /* Reemplaza con la ruta de la imagen */
+  }
+}
+
+@media (max-width: 1200px) {
+  .parallax-1 {
+    background-image: url("../img/fidias1-removebg-preview-transformed-SM.jpg"); /* Reemplaza con la ruta de la imagen */
+  }
+}
+
+.parallax-1 h1 {
+  font-weight: 400;
+}
+
+.parallax-1 a {
+  text-shadow: none;
 }
 
 .parallax-2 {
