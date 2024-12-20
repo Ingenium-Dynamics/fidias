@@ -208,6 +208,8 @@
     <!-- Sección de Galería -->
     <!-- Sección de Galería -->
     <section id="galeria" class="container my-5 fade-in-element">
+        <h2 class="display-5 text-center">¡Únete a Nuestra Comunidad!</h2>
+        <hr class="hr-unete">
         <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <!-- Primera fila de imágenes -->
@@ -249,36 +251,49 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Siguiente</span>
             </button>
+            <p class="text-center pt-3">Conoce personas, diviértete y aprende a bailar.</p>
         </div>
     </section>
 
 
     <!-- Última Sección Parallax -->
+    <!--
     <div class="parallax parallax-3 fade-in-element">
         <div class="text-center">
             <h2 class="display-5">¡Únete a Nuestra Comunidad!</h2>
             <p>Conoce personas, diviértete y aprende a bailar.</p>
         </div>
     </div>
+    -->
 
     <!-- Sección de Contacto -->
-    <section id="contacto" class="container my-5 fade-in-element">
+    <section id="contacto" class="container my-5 py-2 fade-in-element">
         <h2 class="text-center mb-4">Contáctanos</h2>
+        <hr class="hr-contacto">
         <form>
-            <div class="mb-3">
+            <div class="mb-3 nombre">
                 <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre">
+                <input type="text" class="form-control col-2" id="nombre">
             </div>
-            <div class="mb-3">
+            <div class="mb-3 email">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email">
             </div>
-            <div class="mb-3">
+            <div class="mb-3 mensaje">
                 <label for="mensaje" class="form-label">Mensaje</label>
                 <textarea class="form-control" id="mensaje" rows="4"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn bg-dark text-light">Enviar</button>
         </form>
+    </section>
+
+    <section id="footer">
+        <footer>
+            <div class="container pt-3 pb-2">
+                <p>Desarrollado por Ingenium Dynamics, 2024 <img src="./assets/img/190433372.png" class="img-fluid"
+                        alt=""></p>
+            </div>
+        </footer>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
