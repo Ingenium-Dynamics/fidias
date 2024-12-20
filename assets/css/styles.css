@@ -121,15 +121,38 @@
 }
 
 /*NUESTRAS CLASES*/
-.salsa-card {
-  max-width: 100%;
-  width: 80%;
-  margin: 0 auto;
-}
-
 #clases .row {
   justify-content: center;
   align-items: stretch;
+}
+
+.nuestras-clases-titulo {
+  justify-content: center;
+  align-items: center;
+}
+.nuestras-clases-titulo h2 {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.nuestras-clases-titulo hr {
+  justify-self: center;
+  width: 5%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.hr-nuestras-clases {
+  height: 3px;
+  color: #b43a18;
+  background-color: #b43a18;
+  opacity: 90%;
+}
+
+.salsa-card {
+  max-width: 100%;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .card-body p,
@@ -137,10 +160,14 @@ ul {
   font-size: small;
 }
 
+.card-body p {
+  text-align: justify;
+}
+
 .card-body button {
   margin-top: auto;
 }
 
 .card {
-  height: 100%;
+  min-height: 100%;
 }
