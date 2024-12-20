@@ -12,11 +12,12 @@
 
 /* Configuración para que todas las imágenes tengan el mismo alto */
 .gallery-img img {
-  height: 250px; /* Ajusta la altura según lo que necesites */
+  height: 200px; /* Ajusta la altura según lo que necesites */
+  width: 400px;
   object-fit: cover; /* Mantiene la proporción de la imagen */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
-  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 8px #cfc5b6; /* Sombra suave */
+  border-radius: 3px; /* Bordes redondeados */
 }
 
 /* Efecto de zoom al pasar el cursor sobre la imagen */
