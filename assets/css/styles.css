@@ -60,15 +60,15 @@
 }
 
 .parallax-1 {
-  background-image: url("/assets/img/fidias1.jpg"); /* Reemplaza con la ruta de la imagen */
+  background-image: url("../img/fidias1.jpg"); /* Reemplaza con la ruta de la imagen */
 }
 
 .parallax-2 {
-  background-image: url("/assets/img/fidias2.jpg"); /* Reemplaza con la ruta de la imagen */
+  background-image: url("../img/fidias2.jpg"); /* Reemplaza con la ruta de la imagen */
 }
 
 .parallax-3 {
-  background-image: url("/assets/img/fidias3.jpg"); /* Reemplaza con la ruta de la imagen */
+  background-image: url("../img/fidias3.jpg"); /* Reemplaza con la ruta de la imagen */
 }
 
 /* Efectos de animación */
