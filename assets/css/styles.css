@@ -64,7 +64,29 @@
 }
 
 .parallax-2 {
-  background-image: url("../img/fidias2.jpg"); /* Reemplaza con la ruta de la imagen */
+  /*background-image: url("../img/fidias2.jpg");*/ /* Reemplaza con la ruta de la imagen */
+  background-color: #120404;
+}
+
+.parallax-2 h2 {
+  font-size: 60px;
+  letter-spacing: 3px;
+  opacity: 95%;
+  text-shadow: 0px 0px 0px #ecf4f5;
+}
+
+.parallax-2 h3 {
+  font-size: 35px;
+  font-weight: 400;
+  padding-left: 120px;
+}
+
+.parallax-2 p {
+  font-size: small;
+}
+
+.parallax-2 img {
+  height: 100%;
 }
 
 .parallax-3 {
